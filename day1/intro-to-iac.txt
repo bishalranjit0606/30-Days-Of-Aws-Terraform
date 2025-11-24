@@ -1,0 +1,96 @@
+Introduction to Terraform and Infrastructure as Code (IaC)
+
+When we work with cloud platforms like AWS, Azure, or Google Cloud, we often create servers, networks, databases, and many other resources. Doing all of this manually from the cloud console works for learning, but in the real world, it’s not practical. This is where Infrastructure as Code (IaC) comes in.
+
+What Is IaC?
+
+IaC (Infrastructure as Code) means managing and provisioning your cloud infrastructure using code instead of clicking buttons in the console. In simple words: you write a file, run a command, and your infrastructure gets created automatically.
+
+Why Do We Need IaC?
+
+Using the cloud console is fine for small tasks, but real companies have:
+
+Multiple environments like dev, test, QA, staging, prod
+
+Many applications—sometimes hundreds
+
+A lot of repeated setup work
+
+Imagine it takes 2 hours to manually create one environment. If you need 6 environments, that becomes 12 hours per day. And this is only for one application. What if the company has 100 apps?
+
+This is slow, costly, and not efficient.
+
+IaC makes this job extremely fast. With IaC, you can:
+
+Create an entire environment in minutes
+
+Destroy it when not needed
+
+Keep your setup consistent every time
+
+Benefits of IaC
+
+Saves time
+
+Saves cost
+
+Reduces human errors
+
+More secure
+
+No more "it works on my machine" issues
+
+Easy to repeat the same setup again and again
+
+Popular IaC Tools
+
+Terraform – supports almost all cloud providers
+
+Pulumi
+
+Azure ARM Templates – Azure only
+
+AWS CloudFormation – AWS only
+
+GCP Deployment Manager – GCP only
+
+Why Terraform Is the Most Popular
+
+Works with almost every cloud provider
+
+No vendor lock-in
+
+Easy to learn
+
+Uses .tf files written in HCL (HashiCorp Configuration Language)
+
+HCL looks similar to JSON and is simple to read
+
+Not like Python or other programming languages—very beginner-friendly
+
+Basic Terraform Commands
+
+terraform init – initializes Terraform and downloads needed providers
+
+terraform validate – checks your code for errors
+
+terraform plan – shows what Terraform will create
+
+terraform apply – actually creates the resources
+
+terraform destroy – removes all the resources created by Terraform
+
+Terraform talks to the cloud provider’s API (like AWS API) to create or remove resources.
+
+How to Install Terraform
+
+Install Terraform using this link: https://developer.hashicorp.com/terraform/install
+
+Verify installation with:
+
+terraform -v
+Conclusion
+
+This is all you need to get started. Terraform is simple, powerful, and widely used in the industry. In the next session, we will go deeper into how Terraform works.
+
+See you on Day 2!
